@@ -43,6 +43,23 @@
 
 위 상태는 공유된 보고와 설계 문서를 기준으로 합니다. 시험용 영상, 모델 검토, 시뮬레이터 시연을 통합 파이프라인의 성능 검증 완료로 간주하지 않습니다.
 
+### 🖼️ Simulation Preview
+
+<div align="center">
+  <img src="assets/simulation-overview.png" width="820" alt="도로와 횡단보도, 차량, 인도 보행자를 위에서 본 시뮬레이션 장면" />
+  <br />
+  <sub>교차로의 도로·차량·보행자 배치. 위험 예측 결과 화면은 아닙니다.</sub>
+</div>
+
+<details>
+<summary>다른 시점에서 본 시뮬레이션 화면</summary>
+
+![도로와 인도를 여러 시점에서 본 시뮬레이션 장면](assets/simulation-multi-view.png)
+
+</details>
+
+현재 이미지는 시뮬레이션 환경의 구성 현황을 보여줍니다. 운전자 시야에서의 실제 가림 여부, 카메라 설치 시점, 구간별 $D_{vis}$는 별도로 측정·검증할 예정입니다.
+
 ---
 
 ## ✨ Core Ideas
