@@ -54,7 +54,9 @@
 <details>
 <summary>다른 시점에서 본 시뮬레이션 화면</summary>
 
-![도로와 인도를 여러 시점에서 본 시뮬레이션 장면](assets/simulation-multi-view.png)
+| 도로 정면 시점 | 교차로 측면 시점 | 교차로 상공 시점 |
+|:---:|:---:|:---:|
+| <img src="assets/simulation-view-1.png" alt="횡단보도를 바라보는 도로 정면 시점" width="280" /> | <img src="assets/simulation-view-2.png" alt="보행자와 교차로를 보는 측면 시점" width="280" /> | <img src="assets/simulation-view-3.png" alt="차량과 횡단보도를 보는 상공 시점" width="280" /> |
 
 </details>
 
