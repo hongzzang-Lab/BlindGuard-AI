@@ -1,8 +1,10 @@
 # BlindGuard AI
 
-**도로변 카메라 기반 보행자 차로 진입 예측 및 운전자 사전 경고 시스템**
+**도로변 카메라 기반 사각지대 보행자 차로 진입 예측 및 차량별 사전 경고**
 
-가려진 보행자를 도로 인프라에서 관찰하고, 보행자의 차로 진입 예상 시간과 차량 접근 시간을 비교해 경고 대상을 결정합니다. 현재 저장소에는 시스템 설계와 Webots 시뮬레이션 화면을 정리하고 있습니다.
+`Edge Vision → Intent Prediction → Vehicle Matching → Alert Decision → Driver App`
+
+**Repository scope:** 시스템 아키텍처 · Webots 시뮬레이션 · 평가 설계
 
 ## Architecture
 
@@ -14,7 +16,18 @@
 | Alert Decision | `T_ped`, `T_veh`, 구간 가시거리 | 시간 창 중첩 및 제동 가능 거리 비교 | 차량별 경고 여부 |
 | Driver App | 경고 이벤트 | 알림 표시 | 운전자 사전 경고 |
 
-초기 경고 조건은 `T_ped ∩ T_veh ≠ ∅` 및 `D_vis < D_stop`입니다. `D_vis`는 해당 구간에서 운전자가 보행자를 확인할 수 있는 거리, `D_stop`은 차량의 정지에 필요한 거리입니다. 조건과 임계값은 시뮬레이션 및 실측 데이터로 조정합니다.
+## Alert rule
+
+**경고 조건:** `overlap(T_ped, T_veh) AND (D_vis < D_stop)`
+
+| 변수 | 의미 |
+|---|---|
+| `T_ped` | 보행자 차로 진입 예상 시간 창 |
+| `T_veh` | 차량의 해당 구간 도착 예상 시간 창 |
+| `D_vis` | 해당 구간에서 보행자를 확인할 수 있는 거리 |
+| `D_stop` | 차량의 정지 거리 |
+
+**보정 항목:** 경고 임계값, 가시거리·정지 거리 산정 기준
 
 ## Simulation
 
@@ -23,7 +36,7 @@
 </p>
 
 <details>
-<summary>다른 카메라 시점 보기</summary>
+<summary>Additional viewpoints</summary>
 
 | 도로 정면 | 교차로 측면 | 교차로 상공 |
 |:---:|:---:|:---:|
@@ -31,7 +44,7 @@
 
 </details>
 
-Webots에서 차량·보행자·차로 진입 및 시야 가림 시나리오를 구성하고, 구간별 가시거리와 경고 타이밍을 평가합니다.
+**시뮬레이션 항목:** 차량·보행자 동선, 차로 진입, 시야 가림, 구간별 가시거리, 경고 타이밍
 
 ## Development status
 
