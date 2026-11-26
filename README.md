@@ -1,5 +1,13 @@
 # BlindGuard AI
 
+> [!IMPORTANT]
+> **이 저장소는 초기 프로토타입입니다** (시스템 설계 · Webots 시뮬레이션 단계).
+> 최종 구현은 **[BlindGuard-X](https://github.com/hongzzang-Lab/BlindGuard-X)** 에 있습니다 — Raspberry Pi 5 엣지 Vision, 차량별 CPA 경고, CARLA 시연, MOT15 · SOMPT22 평가.
+>
+> *This repository is the early prototype (system design and Webots simulation). The final implementation is **[BlindGuard-X](https://github.com/hongzzang-Lab/BlindGuard-X)**.*
+
+**➜ 최종 구현 (Final implementation): [github.com/hongzzang-Lab/BlindGuard-X](https://github.com/hongzzang-Lab/BlindGuard-X)**
+
 **도로변 카메라 기반 사각지대 보행자 차로 진입 예측 및 차량별 사전 경고**
 
 `Edge Vision → Intent Prediction → Vehicle Matching → Alert Decision → Driver App`
@@ -48,6 +56,8 @@
 
 ## Development status
 
+> 아래 표는 **프로토타입 당시의 상태**입니다. 이후 작업은 [BlindGuard-X](https://github.com/hongzzang-Lab/BlindGuard-X)에서 이어졌고, 최종 구현에서는 시뮬레이터가 CARLA로, 경고 규칙이 차량별 CPA(최근접점) 예측으로 바뀌었습니다.
+
 | 영역 | 상태 | 다음 작업 |
 |---|---|---|
 | Webots 환경 | 구성 중 | 보행자 진입·가림 시나리오 및 가시거리 측정 |
@@ -61,11 +71,3 @@
 - **Prediction:** 차로 진입 여부, 진입 시간 오차, 조기 예측 가능 시간
 - **Alert:** 적시 경고율, 불필요 경고율, 촬영부터 알림까지의 지연
 - **Ablation:** 반경 기반 경고 / 시간 창 매칭 / 시간 창 + 가시거리 조건 비교
-
-## Team
-
-| 담당 | 역할 |
-|---|---|
-| 홍정민 | 전체 파이프라인, Vision 및 보행자 동작 의도 연구 |
-| 정서현 | Webots 시뮬레이션 및 시나리오 구성 |
-| 장지민 | 선행 연구 조사, 데이터·실험 자료 정리 |
