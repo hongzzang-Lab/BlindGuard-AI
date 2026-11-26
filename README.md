@@ -1,18 +1,11 @@
 # BlindGuard AI
 
+**사각지대 보행자 사전 경고 — 초기 프로토타입** (시스템 설계 · Webots 시뮬레이션)
+
 > [!IMPORTANT]
-> **초기 프로토타입 저장소** (시스템 설계 · Webots 시뮬레이션 단계)  
-> 최종 구현: **[BlindGuard-X](https://github.com/hongzzang-Lab/BlindGuard-X)** — Raspberry Pi 5 엣지 Vision · 차량별 CPA 경고 · CARLA 시연 · MOT15 · SOMPT22 평가
->
-> *Early prototype (system design and Webots simulation). Final implementation: **[BlindGuard-X](https://github.com/hongzzang-Lab/BlindGuard-X)***
-
-**➜ 최종 구현 (Final implementation): [github.com/hongzzang-Lab/BlindGuard-X](https://github.com/hongzzang-Lab/BlindGuard-X)**
-
-**도로변 카메라 기반 사각지대 보행자 차로 진입 예측 및 차량별 사전 경고**
+> 최종 구현: **[BlindGuard-X](https://github.com/hongzzang-Lab/BlindGuard-X)**
 
 `Edge Vision → Intent Prediction → Vehicle Matching → Alert Decision → Driver App`
-
-**Repository scope:** 시스템 아키텍처 · Webots 시뮬레이션 · 평가 설계
 
 ## Architecture
 
