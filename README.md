@@ -1,10 +1,10 @@
 # BlindGuard AI
 
 > [!IMPORTANT]
-> **이 저장소는 초기 프로토타입입니다** (시스템 설계 · Webots 시뮬레이션 단계).
-> 최종 구현은 **[BlindGuard-X](https://github.com/hongzzang-Lab/BlindGuard-X)** 에 있습니다 — Raspberry Pi 5 엣지 Vision, 차량별 CPA 경고, CARLA 시연, MOT15 · SOMPT22 평가.
+> **초기 프로토타입 저장소** (시스템 설계 · Webots 시뮬레이션 단계)  
+> 최종 구현: **[BlindGuard-X](https://github.com/hongzzang-Lab/BlindGuard-X)** — Raspberry Pi 5 엣지 Vision · 차량별 CPA 경고 · CARLA 시연 · MOT15 · SOMPT22 평가
 >
-> *This repository is the early prototype (system design and Webots simulation). The final implementation is **[BlindGuard-X](https://github.com/hongzzang-Lab/BlindGuard-X)**.*
+> *Early prototype (system design and Webots simulation). Final implementation: **[BlindGuard-X](https://github.com/hongzzang-Lab/BlindGuard-X)***
 
 **➜ 최종 구현 (Final implementation): [github.com/hongzzang-Lab/BlindGuard-X](https://github.com/hongzzang-Lab/BlindGuard-X)**
 
@@ -56,7 +56,7 @@
 
 ## Development status
 
-> 아래 표는 **프로토타입 당시의 상태**입니다. 이후 작업은 [BlindGuard-X](https://github.com/hongzzang-Lab/BlindGuard-X)에서 이어졌고, 최종 구현에서는 시뮬레이터가 CARLA로, 경고 규칙이 차량별 CPA(최근접점) 예측으로 바뀌었습니다.
+> **프로토타입 당시 상태.** 이후 작업: [BlindGuard-X](https://github.com/hongzzang-Lab/BlindGuard-X) — 시뮬레이터 Webots → CARLA, 경고 규칙 시간 창 중첩 → 차량별 CPA(최근접점) 예측
 
 | 영역 | 상태 | 다음 작업 |
 |---|---|---|
